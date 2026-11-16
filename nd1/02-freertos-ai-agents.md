@@ -183,10 +183,10 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph ทั่วไป[บอร์ดทั่วไป]
+    subgraph GEN[บอร์ดทั่วไป]
         U1[USB-C] --> BR[CH340 / CP2102] --> UART[UART0 ของ ESP32]
     end
-    subgraph เรา[ES3C28P]
+    subgraph OURS[ES3C28P]
         U2[USB-C] --> NAT[USB-Serial/JTAG<br/>ในชิป ESP32-S3]
     end
 ```
@@ -264,10 +264,10 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    subgraph เล่นเสียง
+    subgraph PLAY[เล่นเสียง]
         E1[ESP32-S3] -->|I2S| C1[ES8311<br/>DAC] --> A1[FM8002E<br/>amp] --> SPK[🔊 ลำโพง]
     end
-    subgraph รับเสียง
+    subgraph REC[รับเสียง]
         MIC[🎤 MEMS mic] --> C2[ES8311<br/>ADC + pre-amp] -->|I2S| E2[ESP32-S3]
     end
 ```
