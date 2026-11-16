@@ -215,9 +215,10 @@ sequenceDiagram
 ## 7. W05 — Parameter
 
 ```bash
-robotos param list   <node>
-robotos param get    <node> max_speed
-robotos param set    <node> max_speed 2.0     # เปลี่ยนขณะรัน
+robotos param list  tuning_node              # ดู parameter ที่ node ประกาศไว้
+robotos param get   tuning_node setpoint     # → 42
+robotos param set   tuning_node setpoint 77  # เปลี่ยนขณะรัน
+robotos param watch tuning_node              # ดูเหตุการณ์เปลี่ยนค่าแบบสด
 ```
 - เทียบได้กับ **แก้ tag table ของ PLC แบบ online**
 - node เป็นเจ้าของ parameter ของตัวเอง ค่าคงอยู่จนมีคนตั้งใจเปลี่ยน (ต่างจาก topic ที่ไหลตลอด)
@@ -293,7 +294,7 @@ flowchart LR
 | W02 | `create_publisher` / `create_subscriber` + `on_message`, `topic echo` |
 | W03 | `create_service`, `node.call` |
 | W04 | action: goal → feedback → result + cancel |
-| W05 | `robotos param get/set` |
+| W05 | `robotos param list/get/set/watch` |
 | W06 | `robotos record`, `bag info`, `play --rate` |
 | W07 | twin = subscriber สถานะ + publisher คำสั่ง |
 
