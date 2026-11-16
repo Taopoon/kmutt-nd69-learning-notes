@@ -85,7 +85,45 @@ gh repo create my-notes --public --source . --push   # สร้าง repo บ�
 
 > 💡 ไม่ต้องจำทั้งหมด จำแค่ `git help` และถาม AI ได้เสมอ
 
-## 5. คำศัพท์ที่จะเจอบน GitHub
+## 5. เริ่มต้นแบบ GitHub Desktop (ไม่ต้องพิมพ์คำสั่ง)
+
+| ปุ่ม / การกระทำ | ผลที่ได้ |
+|---|---|
+| **Clone** | สร้างสำเนา repo **พร้อมประวัติ** ลงเครื่อง (ต่างจาก Download ZIP ที่ทำงานต่อกับ Git ไม่ได้) |
+| **Save** (ในโปรแกรมแก้ไฟล์) | บันทึกไฟล์ — **ยังไม่ใช่ commit** |
+| **Commit** | บันทึกการเปลี่ยนแปลงที่เลือกลงประวัติ **ในเครื่อง** |
+| **Push** | ส่ง commit ขึ้น GitHub |
+| **Fetch** | ดูว่า GitHub มีของใหม่ไหม **แต่ยังไม่รวมเข้าไฟล์ในเครื่อง** |
+| **Pull** | รับของใหม่แล้วรวมเข้าเครื่อง |
+
+**ทีละขั้น**
+1. GitHub Desktop → **File → Clone repository** → เลือก repo ของเรา (หรือวาง URL) → เลือกโฟลเดอร์ปลายทาง เช่น `Documents/GitHub/my-notes` (อย่าเลือกโฟลเดอร์ที่มีงานอื่นอยู่)
+2. **Repository → Open in Visual Studio Code** แล้วแก้ไฟล์ → Save
+3. กลับ Desktop แท็บ **Changes** — ตรวจรายการไฟล์และ diff เลือกเฉพาะไฟล์ที่ต้องการ
+4. กรอก **Summary** (ข้อความ commit สั้น ๆ เช่น `docs: add week 01 summary`) → **Commit to main**
+5. เปิดเว็บดู — **ยังเป็นของเดิม** เพราะยังไม่ได้ push
+6. กด **Push origin** → รีเฟรชเว็บ เห็นของใหม่
+7. ถ้ามีคนแก้บนเว็บ (หรือเราแก้จากเครื่องอื่น) → **Fetch origin** → **Pull origin** → ไฟล์ในเครื่องอัปเดต
+
+> ตรวจ **Current Repository** และ **Current Branch** ที่แถบด้านบนทุกครั้งก่อนเริ่มงาน
+
+**แก้ conflict** — เมื่อสอง branch แก้บรรทัดเดียวกัน ไฟล์จะมีเครื่องหมายแบบนี้:
+```text
+<<<<<<< ฝั่งหนึ่ง
+Workshop title: GitHub for Beginners
+=======
+Workshop title: GitHub Hands-On
+>>>>>>> อีกฝั่ง
+```
+1. อ่านทั้งสองฝั่งแล้ว **ตกลงข้อความสุดท้าย** (เช่น `Workshop title: GitHub Hands-On for Beginners`)
+2. **ลบเครื่องหมาย `<<<<<<<`, `=======`, `>>>>>>>` ทั้งหมด** แล้ว Save
+3. กลับ Desktop → **Continue merge / Commit merge** → Push
+
+> Conflict **ไม่ได้แปลว่าข้อมูลพัง** — แค่ต้องให้คนตัดสินใจ
+
+**ย้อนงานที่ push ไปแล้ว (Revert)** — แท็บ **History** → คลิกขวาที่ commit → **Revert Changes in Commit** → Push · revert = **สร้าง commit ใหม่ที่ย้อนผล** โดยไม่ลบ commit เก่า · ⚠️ ถ้าเผลอ commit รหัสผ่าน / API key การ revert **ไม่ลบออกจากประวัติ** ต้องเปลี่ยน key นั้นทันที
+
+## 6. คำศัพท์ที่จะเจอบน GitHub
 
 ```mermaid
 gitGraph
@@ -109,7 +147,25 @@ gitGraph
 - **Tag / Release** = ป้ายเวอร์ชัน (v1.0, beta) และไฟล์ให้ผู้ใช้ดาวน์โหลด เช่น installer
 - **Public / Private** = ใครเห็น repo ได้บ้าง ตั้งได้ที่ Settings → Danger Zone → Change visibility
 
-## 6. Markdown เบื้องต้น
+## 7. ส่งงาน Mini-Project ทีละขั้น
+
+```mermaid
+flowchart LR
+    A[สรุปเนื้อหา<br/>เป็นไฟล์ .md] --> B[สร้าง repo<br/>แบบ Public]
+    B --> C[commit + push]
+    C --> D[เปิดลิงก์ใน<br/>หน้าต่าง incognito]
+    D -->|เปิดได้| E[วาง URL ใน<br/>Google Form]
+    D -->|404| F[Settings → Danger Zone<br/>→ Change visibility → Public]
+    F --> D
+```
+1. สรุปเนื้อหาที่เรียนลงไฟล์ Markdown (ใช้ AI ช่วยได้ แต่ควรอ่านทวนเอง) — กำหนดผู้อ่านเอง เช่น ตัวเอง เพื่อนร่วมทีม มือใหม่
+2. สร้าง repo ใหม่ในบัญชีตัวเอง ตั้งเป็น **Public** (ชื่อ repo ตั้งอะไรก็ได้)
+3. commit + push ไฟล์สรุป (และรูปถ้ามี)
+4. **ทดสอบลิงก์ในหน้าต่าง incognito** (ไม่ได้ login) — ถ้าเปิดไม่ได้ ผู้ตรวจ (ทั้งคนและ AI agent) ก็เปิดไม่ได้ = ถือว่ายังไม่ส่ง
+5. วาง URL ในฟอร์มของแต่ละหลักสูตร — ลง 3 หลักสูตรต้องส่ง 3 ครั้ง · ส่งเป็นลิงก์โฟลเดอร์หรือลิงก์ branch ได้
+6. งานที่ไม่เหมาะกับ GitHub (เช่นคลิปบอร์ดไฟกะพริบ) ฝากไว้ YouTube แบบ Unlisted หรือ Google Drive แบบ "ทุกคนที่มีลิงก์" แล้วใส่ลิงก์ใน README — **ห้ามตั้งเป็น Private**
+
+## 8. Markdown เบื้องต้น
 
 Markdown คือข้อความธรรมดาที่ใส่สัญลักษณ์นิดหน่อยแล้วแสดงผลสวยบน GitHub เหมาะกับยุค AI มาก เพราะ AI อ่านและเขียนได้ดี
 
@@ -127,7 +183,7 @@ Markdown คือข้อความธรรมดาที่ใส่ส�
 - **Mermaid** ไม่ใช่ส่วนหนึ่งของ Markdown แต่ GitHub วาดให้ได้ เปลี่ยนทิศ flowchart ได้ด้วย `LR` (ซ้าย→ขวา) หรือ `TB` (บน→ล่าง)
 - ฝึกได้ที่ [StackEdit](https://stackedit.io) (มีปุ่มเหมือน Word ไม่ต้องจำ syntax) หรือใน VS Code ที่แก้และ preview พร้อมกัน (`Ctrl+Shift+V`)
 
-## 7. เทคนิคทำเอกสารด้วย AI
+## 9. เทคนิคทำเอกสารด้วย AI
 
 - แยกเนื้อหาเป็นหลายไฟล์ตามบท ไม่ยัดไว้ไฟล์เดียว AI อ่านง่ายและเปลือง token น้อยกว่า
 - ใน VS Code กด **Shift ค้าง** แล้วลากไฟล์มาวาง จะได้ลิงก์ไปไฟล์นั้นอัตโนมัติ
@@ -136,7 +192,7 @@ Markdown คือข้อความธรรมดาที่ใส่ส�
 - ทำเอกสารทั่วไปใช้ chat ฟรีก็พอ เก็บโมเดลแพงไว้งานเขียนโค้ดหนัก ๆ
 - **อย่าพิมพ์รหัสผ่าน API key หรือข้อมูลบัตรลงในแชท AI** ให้ใส่เองผ่าน command line
 
-## 8. ปัญหาที่พบบ่อย
+## 10. ปัญหาที่พบบ่อย
 
 | อาการ | สาเหตุ / วิธีแก้ |
 |---|---|
@@ -145,10 +201,17 @@ Markdown คือข้อความธรรมดาที่ใส่ส�
 | push แล้วโดนปฏิเสธ (rejected) | บน GitHub มีของใหม่กว่า → `git pull` ก่อนแล้วค่อย push |
 | ถามรหัสผ่านทุกครั้ง | ยังไม่ได้ `gh auth login` |
 | commit มีชื่อ/โลโก้ AI ติดมา | AI agent ใส่เอง ถ้าต้องการคุมเองให้ commit ผ่าน command line |
+| Save แล้วเว็บไม่เปลี่ยน | ยังไม่ได้ commit + push |
+| Fetch แล้วไฟล์ไม่เปลี่ยน | Fetch ไม่รวมงาน ต้อง Pull ด้วย และตรวจว่าอยู่ branch ที่ถูก |
+| ไม่เห็น branch บนเว็บ | branch ยังอยู่แค่ในเครื่อง → Publish branch / push |
+| สลับ branch ไม่ได้เพราะมีงานค้าง | commit งานที่ต้องเก็บก่อน อย่ากด Discard โดยไม่อ่าน |
+| รูปหรือลิงก์ใน README เสีย | ตรวจ path เทียบกับตำแหน่งไฟล์ .md ตัวพิมพ์เล็ก-ใหญ่ และไฟล์ถูก push จริงไหม |
+| เผลอ commit รหัสผ่าน / key | เปลี่ยน key ทันที แจ้งผู้ดูแล — revert ไม่ลบประวัติ |
 
 ## แหล่งอ้างอิง
 
-- คู่มือของผู้สอน: [GitHub Hands-On: A Practical Guide for Beginners](https://github.com/drsanti/github-hands-on)
+- คู่มือของผู้สอน: [GitHub Hands-On: A Practical Guide for Beginners](https://github.com/drsanti/github-hands-on) — [บท GitHub Desktop](https://github.com/drsanti/github-hands-on/blob/main/lessons/04-github-desktop/README.md) · [บท Conflict และกู้คืนงาน](https://github.com/drsanti/github-hands-on/blob/main/lessons/07-conflicts-and-recovery/README.md) · [ปัญหาที่พบบ่อย](https://github.com/drsanti/github-hands-on/blob/main/appendix/troubleshooting.md)
+- การบรรยาย Online Week 05 ของ ND1 / ND2 / ND3 (14–15 พ.ย. 2026)
 - โจทย์ Mini-Project #1: [ND1](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week06/README.md) · [ND2](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week06/README.md) · [ND3](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week06/README.md)
 - [GitHub Docs](https://docs.github.com/) · [Mermaid](https://mermaid.js.org/)
 
