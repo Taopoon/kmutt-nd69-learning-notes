@@ -333,7 +333,7 @@ flowchart LR
   [09](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week02/lessons/09-digital-twin.md) ·
   [10](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week02/lessons/10-twin-meets-middleware.md)
 - การบรรยาย Online ND3 Week 02 (18 ต.ค. 2026)
-- [ROS 2 Concepts](https://docs.ros.org/en/rolling/Concepts.html)
+- [ROS 2 Concepts](https://docs.ros.org/en/jazzy/Concepts.html)
 
 ---
 🏠 [หน้าหลัก](../README.md) · 📚 [สารบัญ ND3](README.md) · ⬅ [บทที่ 1](01-digital-twins-ai.md) · ถัดไป ➡ [บทที่ 3 — ลงมือกับ robotos](03-robotos-hands-on.md)
