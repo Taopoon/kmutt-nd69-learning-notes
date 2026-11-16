@@ -22,7 +22,7 @@ flowchart LR
 | บท | หัวข้อ | สัปดาห์ | เรียนอะไร |
 |---|---|---|---|
 | 1 | [พื้นฐาน Edge AI และ IoT ในยุค AI](01-edge-ai-iot-basics.md) | Week 01 | ภาพรวมโปรเจกต์, จาก Hobby สู่ Product, วิธีทำงานกับ AI |
-| 2 | [บอร์ด ES3C28P และการใช้ AI อย่างมีวินัย](02-freertos-ai-agents.md) | Week 02 | ฮาร์ดแวร์บนบอร์ด, ชนิดของ memory, กับดักของ AI coding |
+| 2 | [รู้จักบอร์ด ES3C28P ตั้งแต่ชิปถึงอุปกรณ์](02-freertos-ai-agents.md) | Week 02 | ชิป, หน่วยความจำ 6 ชนิด, จอ / เสียง / LED / แบต, แผนที่ขา, กับดัก AI |
 | 3 | [ESP-IDF, Hello World และ FreeRTOS บน PC](03-esp-idf-hello-world.md) | Week 03 | build/flash/monitor, task state, board twin |
 | 4 | [Workshop Onsite: Firmware บนบอร์ดจริง](04-onsite-firmware-workshop.md) | Week 04 | repo workshop, เลือกแบบฝึก, flash ลงบอร์ด |
 | 5 | [Git, GitHub และ Markdown](../common/git-github-markdown.md) | Week 05 | เครื่องมือส่งงานและเขียนเอกสาร (ใช้ร่วมกันทุกหลักสูตร) |
