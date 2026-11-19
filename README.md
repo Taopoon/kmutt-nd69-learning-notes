@@ -14,6 +14,7 @@
 | **ND2** | นักพัฒนา GUI/HMI สำหรับ Mobile และ Edge — เว็บแอปคุยกับฮาร์ดแวร์ผ่าน Web Serial / Web Bluetooth | [nd2/](nd2/README.md) |
 | **ND3** | นักพัฒนา AI และ Digital Twin เชิงอุตสาหกรรม — middleware แบบ ROS, warehouse simulation, digital twin | [nd3/](nd3/README.md) |
 | ทุกหลักสูตร | Git, GitHub และ Markdown (Week 05) | [common/git-github-markdown.md](common/git-github-markdown.md) |
+| ทุกหลักสูตร | ตัวอย่าง `AGENTS.md` และ Prompt Template สำหรับ AI agent | [common/ai-agent-templates.md](common/ai-agent-templates.md) |
 
 ## วิธีอ่าน
 - แต่ละบทมีโครงเดียวกัน: เรียนอะไร → ทำไมสำคัญ → แนวคิดหลัก (มีแผนภาพ) → ขั้นตอนลงมือ → ปัญหาที่พบบ่อย → คำศัพท์ → แหล่งอ้างอิง

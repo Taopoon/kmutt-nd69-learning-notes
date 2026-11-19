@@ -46,7 +46,7 @@ flowchart LR
 ## 4. เริ่มต้นแบบ command line
 
 **ติดตั้ง**
-- Windows: ติดตั้ง **Git Bash** (มาพร้อม Git) ทำให้ใช้คำสั่งแบบ Linux/Mac ได้ ผู้สอนแนะนำให้ตั้งเป็น terminal หลักใน VS Code
+- Windows: ติดตั้ง **Git Bash** (มาพร้อม Git) ทำให้ใช้คำสั่งแบบ Linux/Mac ได้ แนะนำให้ตั้งเป็น terminal หลักใน VS Code
 - Mac / Linux: มี Git อยู่แล้ว
 - ติดตั้ง GitHub CLI จาก [cli.github.com](https://cli.github.com)
 
@@ -191,6 +191,7 @@ Markdown คือข้อความธรรมดาที่ใส่ส�
 - บอก AI ก่อนว่า **เราเป็นใคร** และเขียนให้ใครอ่าน ผลลัพธ์จะตรงกับงานเรามากกว่า
 - ทำเอกสารทั่วไปใช้ chat ฟรีก็พอ เก็บโมเดลแพงไว้งานเขียนโค้ดหนัก ๆ
 - **อย่าพิมพ์รหัสผ่าน API key หรือข้อมูลบัตรลงในแชท AI** ให้ใส่เองผ่าน command line
+- ดูตัวอย่างไฟล์กำกับ agent และ Prompt Template สำหรับแต่ละสายได้ที่ [ตัวอย่าง AGENTS.md และ Prompt Template](ai-agent-templates.md)
 
 ## 10. ปัญหาที่พบบ่อย
 

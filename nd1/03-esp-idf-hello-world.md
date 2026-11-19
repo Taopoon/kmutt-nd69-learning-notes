@@ -71,12 +71,12 @@ flowchart LR
 
 > ต้อง activate ที่ **framework** ไม่ใช่โฟลเดอร์แม่ — ผิดตรงนี้คือสาเหตุอันดับหนึ่งของ `idf.py not found`
 
-ผู้สอนแนะนำให้ติดตั้งไว้ไดรฟ์ D หรือโฟลเดอร์ของตัวเอง แทนค่าเริ่มต้นในไดรฟ์ C ที่มักกลายเป็นกองของเก่า
+แนะนำให้ติดตั้งไว้ไดรฟ์ D หรือโฟลเดอร์เฉพาะของตัวเอง แทนค่าเริ่มต้นในไดรฟ์ C ที่มักกลายเป็นกองของเก่า
 
 ### PATH คืออะไร (สำคัญมาก)
 **PATH** คือรายชื่อโฟลเดอร์ที่ terminal ใช้ค้นหาคำสั่ง เมื่อพิมพ์ `idf.py` ระบบจะไล่หาในโฟลเดอร์ทุกตัวใน PATH ถ้าไม่เจอจะได้ `command not found`
 - script `export.ps1` / `export.sh` ของ ESP-IDF **เพิ่ม PATH ชั่วคราวใน terminal หน้าต่างนั้น** ปิดหน้าต่างแล้วหาย — AI agent ทำแบบนี้เช่นกัน
-- เพิ่มถาวรใน System Environment Variables ได้ แต่ผู้สอนไม่ค่อยทำ เพราะเปลี่ยนเวอร์ชันบ่อยแล้วลืม ให้ error เตือนดีกว่า
+- เพิ่มถาวรใน System Environment Variables ได้ แต่ไม่แนะนำให้ทำ เพราะเปลี่ยนเวอร์ชันบ่อยแล้วลืม ให้ error เตือนดีกว่า
 - ตรวจว่าคำสั่งถูกหาเจอที่ไหน: `where idf.py` (Windows) / `which idf.py` (Mac/Linux)
 
 ---
@@ -372,7 +372,7 @@ bash setup.sh        # ครั้งเดียว (Windows cmd/PowerShell �
 | อาการ | สาเหตุ | วิธีแก้ |
 |---|---|---|
 | `idf.py: command not found` | ยังไม่ activate หรือ activate ผิดโฟลเดอร์ | รัน `export` ที่ **framework (`IDF_PATH`)** |
-| Windows: เครื่องมือ ESP-IDF error แปลก ๆ | รันใน Git Bash | ใช้ **PowerShell** |
+| Windows: เครื่องมือ ESP-IDF เกิด error ผิดปกติ | รันใน Git Bash | ใช้ **PowerShell** |
 | PowerShell ไม่ยอมรัน script | execution policy | ตั้ง policy ให้รัน script ได้ (ถาม AI พร้อมข้อความ error) |
 | Mac/Linux: permission denied | ไฟล์ไม่มีสิทธิ์รัน | `chmod +x ชื่อไฟล์` |
 | Git Bash หา `cmake` ไม่เจอ | Git Bash เป็น environment แยกจาก CMD/PowerShell | เพิ่ม `export PATH=...` ท้าย `~/.bashrc` แล้ว `source ~/.bashrc` |
@@ -410,7 +410,7 @@ bash setup.sh        # ครั้งเดียว (Windows cmd/PowerShell �
 ### แบบฝึก
 1. Build และ flash Hello World แล้วเปลี่ยนข้อความเป็นชื่อตัวเอง
 2. รัน `./run ch01` และ `./run ch04` แล้วอธิบายว่า priority มีผลต่อการทำงานอย่างไร
-3. เขียน 2 task: task A กะพริบ LED, task B ส่งคำสั่ง "เปลี่ยนความเร็ว" ให้ task A ผ่าน queue (นี่คือตัวอย่างโจทย์ Mini-Project ที่ผู้สอนยกมา)
+3. เขียน 2 task: task A กะพริบ LED, task B ส่งคำสั่ง "เปลี่ยนความเร็ว" ให้ task A ผ่าน queue (ตัวอย่างโจทย์ Mini-Project แนะนำ)
 4. ทำไมตัวแปรที่ interrupt แก้ต้องเป็น `volatile` และทำไม `volatile` อย่างเดียวยังไม่พอ?
 
 ## คำศัพท์ในบท
