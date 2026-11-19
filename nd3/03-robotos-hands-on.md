@@ -274,6 +274,8 @@ flowchart LR
 
 ## 10. แก้ปัญหาที่พบบ่อย
 
+> 💡 **ปัญหาพื้นฐานเรื่อง Shell (PowerShell / Git Bash), สิทธิ์พอร์ต USB, PATH และ Gatekeeper** รวมวิธีแก้ไว้ที่ [คู่มือแก้ปัญหาพื้นฐาน (Troubleshooting)](../common/troubleshooting.md) — ตารางด้านล่างนี้เน้นปัญหาเฉพาะของบทนี้
+
 | อาการ | สาเหตุ / วิธีแก้ |
 |---|---|
 | `robotos` หาไม่เจอ | เปิด terminal ใหม่แล้วยังไม่ได้ตั้ง PATH / activate `.venv` |

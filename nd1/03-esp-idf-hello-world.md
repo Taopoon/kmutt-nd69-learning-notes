@@ -369,6 +369,8 @@ bash setup.sh        # ครั้งเดียว (Windows cmd/PowerShell �
 
 ## 8. แก้ปัญหาที่พบบ่อย
 
+> 💡 **ปัญหาพื้นฐานเรื่อง Shell (PowerShell / Git Bash), สิทธิ์พอร์ต USB, PATH และ Gatekeeper** รวมวิธีแก้ไว้ที่ [คู่มือแก้ปัญหาพื้นฐาน (Troubleshooting)](../common/troubleshooting.md) — ตารางด้านล่างนี้เน้นปัญหาเฉพาะของบทนี้
+
 | อาการ | สาเหตุ | วิธีแก้ |
 |---|---|---|
 | `idf.py: command not found` | ยังไม่ activate หรือ activate ผิดโฟลเดอร์ | รัน `export` ที่ **framework (`IDF_PATH`)** |

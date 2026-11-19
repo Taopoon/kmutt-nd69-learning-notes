@@ -283,6 +283,8 @@ flowchart LR
 
 ## 11. แก้ปัญหาที่พบบ่อย
 
+> 💡 **ปัญหาพื้นฐานเรื่อง Shell (PowerShell / Git Bash), สิทธิ์พอร์ต USB, PATH และ Gatekeeper** รวมวิธีแก้ไว้ที่ [คู่มือแก้ปัญหาพื้นฐาน (Troubleshooting)](../common/troubleshooting.md) — ตารางด้านล่างนี้เน้นปัญหาเฉพาะของบทนี้
+
 | อาการ | วิธีแก้ |
 |---|---|
 | `topic list` ว่าง | sim ยังไม่รัน / ยังไม่ Connected |
