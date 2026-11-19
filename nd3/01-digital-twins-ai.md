@@ -217,7 +217,7 @@ flowchart LR
 [ROS 2](../common/glossary.md#ros-2) · [Node](../common/glossary.md#node) · [Topic](../common/glossary.md#topic) · [Digital Twin](../common/glossary.md#digital-twin) · [OPC UA](../common/glossary.md#opc-ua) · [MQTT](../common/glossary.md#mqtt) · [micro-ROS](../common/glossary.md#micro-ros) · [QoS](../common/glossary.md#qos) · [TF](../common/glossary.md#tf)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND03 Week 01: [kmutt-nd69/nd3/docs/week01](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week01/README.md) และสไลด์ประกอบการบรรยาย
+- เอกสารผู้สอน ND3 Week 01: [kmutt-nd69/nd3/docs/week01](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week01/README.md) และสไลด์ประกอบการบรรยาย
 - การบรรยาย Online ND3 Week 01 (11 ต.ค. 2026)
 - [ROS 2 Documentation](https://docs.ros.org/) · [micro-ROS](https://micro.ros.org/) · [Webots](https://cyberbotics.com/)
 

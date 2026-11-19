@@ -58,7 +58,7 @@ flowchart TB
 ## 3. W01 — ติดตั้งและดู graph
 
 ### หาแพ็กเกจของ OS ตัวเอง
-```
+```text
 code/
 ├── robotos-v0.3.0-macos-arm64/
 ├── robotos-v0.3.0-windows-x64/
@@ -308,7 +308,7 @@ flowchart LR
 [Topic](../common/glossary.md#topic) · [Service](../common/glossary.md#service) · [Action](../common/glossary.md#action) · [Parameter](../common/glossary.md#parameter) · [Middleware](../common/glossary.md#middleware) · [Digital Twin](../common/glossary.md#digital-twin) · [Node](../common/glossary.md#node)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND03 Week 03: [workshops/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week03/workshops/README.md) · [SYSTEM-OVERVIEW.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week03/SYSTEM-OVERVIEW.md) —
+- เอกสารผู้สอน ND3 Week 03: [workshops/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week03/workshops/README.md) · [SYSTEM-OVERVIEW.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week03/SYSTEM-OVERVIEW.md) —
   [01](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week03/workshops/01-getting-started.md) ·
   [02](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week03/workshops/02-pub-sub.md) ·
   [04](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week03/workshops/04-actions.md) ·

@@ -243,7 +243,7 @@ flowchart TB
 [Edge AI](../common/glossary.md#edge-ai) · [IoT](../common/glossary.md#iot) · [MQTT](../common/glossary.md#mqtt) · [TLS](../common/glossary.md#tls) · [OTA](../common/glossary.md#ota) · [Firmware](../common/glossary.md#firmware) · [Provisioning](../common/glossary.md#provisioning)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND01 Week 01: [kmutt-nd69/nd1/docs/week01](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week01/README.md) และสไลด์ประกอบการบรรยาย
+- เอกสารผู้สอน ND1 Week 01: [kmutt-nd69/nd1/docs/week01](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week01/README.md) และสไลด์ประกอบการบรรยาย
 - การบรรยาย Online ND1 Week 01 (10 ต.ค. 2026)
 - [MQTT.org](https://mqtt.org/) — แนะนำโปรโตคอล MQTT
 

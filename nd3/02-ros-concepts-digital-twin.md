@@ -74,7 +74,7 @@ flowchart LR
 ## 3. Message และ schema: สัญญาข้อมูล
 
 ### Tag แบบเดิม
-```
+```text
 TAG        ADDRESS    TYPE    VALUE
 TEMP_01    %MW100     INT     423
 PUMP_RUN   %M50       BOOL    1
@@ -324,7 +324,7 @@ flowchart LR
 [Node](../common/glossary.md#node) · [Topic](../common/glossary.md#topic) · [Service](../common/glossary.md#service) · [Action](../common/glossary.md#action) · [Parameter](../common/glossary.md#parameter) · [QoS](../common/glossary.md#qos) · [TF](../common/glossary.md#tf) · [Digital Twin](../common/glossary.md#digital-twin)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND03 Week 02 (11 บท): [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week02/lessons/README.md) — โดยเฉพาะ
+- เอกสารผู้สอน ND3 Week 02 (11 บท): [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week02/lessons/README.md) — โดยเฉพาะ
   [01](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week02/lessons/01-why-ros-and-digital-twin.md) ·
   [02](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week02/lessons/02-the-graph.md) ·
   [04](https://github.com/drsanti/kmutt-nd69/blob/main/nd3/docs/week02/lessons/04-services-and-actions.md) ·

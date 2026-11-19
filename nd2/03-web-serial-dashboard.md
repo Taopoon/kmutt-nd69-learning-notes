@@ -26,7 +26,7 @@
 
 | # | Workshop | ได้อะไร |
 |---|---|---|
-| 01 | Getting started | ติดตั้ง Vite+ รันแอปตัวอย่าง เช็คว่าเบราว์เซอร์เข้าถึง API ได้ |
+| 01 | Getting started | ติดตั้ง Vite+ รันแอปตัวอย่าง เช็กว่าเบราว์เซอร์เข้าถึง API ได้ |
 | 02 | DOM + state | ปุ่ม connect, คุม LED, gauge, log — ยังไม่มีอุปกรณ์ |
 | 03 | Serial plumbing | serial port เสมือนคู่หนึ่ง + `fake_device.py` พิสูจน์ว่า byte ไหลจริง |
 | 04 | Web Serial read | `requestPort` → แตกเป็นบรรทัด → แปลง JSON → gauge ขยับ |
@@ -313,7 +313,7 @@ stateDiagram-v2
 [DOM](../common/glossary.md#dom) · [JSON lines](../common/glossary.md#json-lines) · [Web Serial](../common/glossary.md#web-serial) · [GATT](../common/glossary.md#gatt) · [Fallback](../common/glossary.md#fallback) · [Secure context](../common/glossary.md#secure-context)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND02 Week 03: [workshops/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week03/workshops/README.md) —
+- เอกสารผู้สอน ND2 Week 03: [workshops/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week03/workshops/README.md) —
   [01](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week03/workshops/01-getting-started.md) ·
   [03](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week03/workshops/03-serial-plumbing.md) ·
   [04](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week03/workshops/04-serial-read.md) ·
