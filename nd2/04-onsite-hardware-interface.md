@@ -211,6 +211,8 @@ flowchart LR
 
 ## 9. แก้ปัญหาที่พบบ่อย
 
+> 💡 **ปัญหาพื้นฐานเรื่อง Shell (PowerShell / Git Bash), สิทธิ์พอร์ต USB, PATH และ Gatekeeper** รวมวิธีแก้ไว้ที่ [คู่มือแก้ปัญหาพื้นฐาน (Troubleshooting)](../common/troubleshooting.md) — ตารางด้านล่างนี้เน้นปัญหาเฉพาะของบทนี้
+
 | อาการ | วิธีแก้ |
 |---|---|
 | Windows: script `.ps1` ถูกบล็อก | `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` |
