@@ -126,7 +126,7 @@ idf.py --version
 โปรแกรมพิมพ์ `Hello world!` ข้อมูลชิป และ heap ที่เหลือ แล้วนับถอยหลังรีสตาร์ตวนไปเรื่อย ๆ
 
 ### โครงสร้างโปรเจกต์
-```
+```text
 esp32-s3/
 ├── CMakeLists.txt          ← ประกาศโปรเจกต์
 ├── sdkconfig.defaults      ← ค่าเริ่มต้น (เลือก ESP32-S3)
@@ -417,8 +417,8 @@ bash setup.sh        # ครั้งเดียว (Windows cmd/PowerShell �
 [ESP-IDF](../common/glossary.md#esp-idf) · [FreeRTOS](../common/glossary.md#freertos) · [Task](../common/glossary.md#task) · [Mutex](../common/glossary.md#mutex) · [Race condition](../common/glossary.md#race-condition) · [PATH](../common/glossary.md#path) · [Flash](../common/glossary.md#flash-firmware) · [Board twin](../common/glossary.md#board-twin)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND01 Week 03: [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week03/lessons/README.md) · [install-esp-idf.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week03/lessons/install-esp-idf.md) · [Hello World](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week03/lessons/esp32-s3/README.md)
-- [Embedded C + FreeRTOS review](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week02/lessons/15-embedded-c-freertos-review.md) (ND01 Week 02 บทที่ 15)
+- เอกสารผู้สอน ND1 Week 03: [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week03/lessons/README.md) · [install-esp-idf.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week03/lessons/install-esp-idf.md) · [Hello World](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week03/lessons/esp32-s3/README.md)
+- [Embedded C + FreeRTOS review](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week02/lessons/15-embedded-c-freertos-review.md) (ND1 Week 02 บทที่ 15)
 - [freertos-pc-workshops](https://github.com/drsanti/freertos-pc-workshops) · [CURRICULUM.md](https://github.com/drsanti/freertos-pc-workshops/blob/main/CURRICULUM.md)
 - การบรรยาย Online ND1 Week 03 (24 ต.ค. 2026)
 - [ESP-IDF Programming Guide (ESP32-S3)](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/) · [FreeRTOS documentation](https://www.freertos.org/Documentation/00-Overview)

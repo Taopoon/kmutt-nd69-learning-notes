@@ -21,7 +21,7 @@
 - แผนภาพเขียนด้วย [Mermaid](https://mermaid.js.org/) ซึ่ง GitHub วาดให้อัตโนมัติ
 
 ## โครงสร้าง repository
-```
+```text
 ├── README.md          หน้านี้
 ├── common/            เนื้อหาที่ใช้ร่วมกัน: คำศัพท์, Git/GitHub/Markdown
 ├── nd1/               ND1 — Edge AI & AIoT
@@ -32,4 +32,4 @@
 ## ที่มาและหมายเหตุ
 - เนื้อหาเรียบเรียงจากบันทึกการเรียนของผู้เขียน และเอกสารของผู้สอน **ผศ.ดร.สันติ นุราช** ที่ [github.com/drsanti/kmutt-nd69](https://github.com/drsanti/kmutt-nd69) — repo นี้ **ลิงก์ไป** เอกสารต้นฉบับ ไม่ได้คัดลอกไฟล์หรือรูปของผู้สอนมา
 - ใช้ AI ช่วยเรียบเรียงและจัดรูปแบบ (ผู้สอนอนุญาตให้ใช้ได้)
-- หากพบข้อผิดพลาด เปิด [Issue](../../issues) แจ้งได้
+- หากพบข้อผิดพลาด เปิด [Issue](https://github.com/Taopoon/kmutt-nd69-learning-notes/issues) แจ้งได้

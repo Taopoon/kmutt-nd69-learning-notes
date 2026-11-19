@@ -49,7 +49,7 @@
 
 แนวคิดหลักคือ **โค้ดแบบฝึกบางมาก** — งานหนัก (โปรโตคอลสื่อสาร, codec, widget ของจอ, middleware) อยู่ใน library สำเร็จรูป **`librobotos_fw.a`** ผู้เรียนจึงโฟกัสที่ตรรกะของแบบฝึกได้
 
-```
+```text
 firmware-esp32-s3-workshop/
 ├── lib/ + include/         ← library สำเร็จรูป (librobotos_fw.a)
 ├── rbdev/                  ← เครื่องมือ CLI สำหรับ Windows / macOS / Linux
@@ -175,7 +175,7 @@ mutex รอบการเล่นเสียง · ISR + notify · priority/
 
 ### Function chaining
 ต่อฟังก์ชันเป็นสายพาน (คล้าย middleware ใน Node.js หรือ function pointer ใน C) เช่น
-```
+```text
 sine generator → PWM → LED
 ```
 ประกอบพฤติกรรมใหม่ได้โดยไม่ต้องเขียนใหม่ทั้งหมด

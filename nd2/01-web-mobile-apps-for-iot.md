@@ -211,7 +211,7 @@ flowchart LR
 [IoT](../common/glossary.md#iot) · [MQTT](../common/glossary.md#mqtt) · [TLS](../common/glossary.md#tls) · [Telemetry / Command / Event](../common/glossary.md#telemetry--command--event) · [Provisioning](../common/glossary.md#provisioning) · [Edge AI](../common/glossary.md#edge-ai)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND02 Week 01: [kmutt-nd69/nd2/docs/week01](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week01/README.md) และสไลด์ประกอบการบรรยาย
+- เอกสารผู้สอน ND2 Week 01: [kmutt-nd69/nd2/docs/week01](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week01/README.md) และสไลด์ประกอบการบรรยาย
 - การบรรยาย Online ND2 Week 01 (10 ต.ค. 2026)
 
 ---

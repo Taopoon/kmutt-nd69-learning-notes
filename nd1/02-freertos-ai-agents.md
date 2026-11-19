@@ -119,7 +119,7 @@ AI เขียนโค้ดให้ "ทำงานได้" แต่ **�
 ### ตัวอย่างคำนวณ: ทำไมจอต้องใช้ PSRAM
 จอ 240×320 พิกเซล สี RGB565 (16 บิต = 2 ไบต์ต่อพิกเซล)
 
-```
+```text
 240 × 320 × 2 = 153,600 ไบต์ ≈ 150 KB ต่อ 1 ภาพ (frame buffer)
 ```
 ถ้าทำ double buffering (วาดภาพถัดไประหว่างที่จอแสดงภาพปัจจุบัน) ต้องใช้ 300 KB — เกินครึ่งของ SRAM ทั้งหมด จึงต้องไปอยู่ PSRAM ซึ่งช้ากว่า ทำให้ได้ราว **5–15 fps** เท่านั้น ทำ animation ลื่น ๆ ไม่ได้ — นี่คือการคิดระดับ **system design** ที่ต้องเริ่มจาก requirement (ขนาดจอ, refresh rate, ใช้ library อะไร, DMA เร็วพอไหม)
@@ -295,7 +295,7 @@ flowchart LR
 - ส่งข้อมูล 24 บิตต่อดวง เรียงเป็น **G-R-B (เขียว-แดง-น้ำเงิน) ไม่ใช่ R-G-B** — ส่งสีผิดลำดับ = สีเพี้ยน
 - บิต 0 กับ 1 แยกกันด้วย **ความกว้างของพัลส์** (ระดับไมโครวินาที) คลาดได้ไม่เกินราว ±150 ns
 
-```
+```text
 bit 0: high ~0.4 µs → low ~0.85 µs
 bit 1: high ~0.8 µs → low ~0.45 µs
 reset: low > 50 µs  (จบเฟรม)
@@ -308,7 +308,7 @@ CPU ถูกแย่งเวลาโดย interrupt, การสลับ 
 
 > กฎที่ควรจำ: **เมื่อระบบมี DMA / interrupt เยอะ งานที่ต้องจังหวะเป๊ะต้องให้ฮาร์ดแวร์ทำ ไม่ใช่ CPU**
 
-> ⚠️ ระวัง infographic ผิด — ภาพสรุปที่ AI สร้างอาจเขียนลำดับ RGB ผิด สมองคนชอบเชื่อภาพมากกว่าตัวหนังสือ ต้องเช็คกับ datasheet เสมอ
+> ⚠️ ระวัง infographic ผิด — ภาพสรุปที่ AI สร้างอาจเขียนลำดับ RGB ผิด สมองคนชอบเชื่อภาพมากกว่าตัวหนังสือ ต้องเช็กกับ datasheet เสมอ
 
 ---
 
@@ -390,7 +390,7 @@ CPU ถูกแย่งเวลาโดย interrupt, การสลับ 
 [ESP32-S3](../common/glossary.md#esp32-s3) · [SRAM / PSRAM](../common/glossary.md#sram--psram) · [NVS](../common/glossary.md#nvs) · [I2C](../common/glossary.md#i2c) · [I2S](../common/glossary.md#i2s) · [ESP-IDF](../common/glossary.md#esp-idf) · [Datasheet](../common/glossary.md#datasheet) · [PWM](../common/glossary.md#pwm)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND01 Week 02 (15 บท): [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week02/lessons/README.md) — โดยเฉพาะ
+- เอกสารผู้สอน ND1 Week 02 (15 บท): [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week02/lessons/README.md) — โดยเฉพาะ
   [01 ชิป](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week02/lessons/01-esp32s3r8-the-chip.md) ·
   [03 memory](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week02/lessons/03-memory-types.md) ·
   [04 memory ในมุม firmware](https://github.com/drsanti/kmutt-nd69/blob/main/nd1/docs/week02/lessons/04-memory-firmware-view.md) ·

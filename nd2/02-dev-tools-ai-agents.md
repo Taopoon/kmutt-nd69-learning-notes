@@ -312,7 +312,7 @@ vp --version         # เห็นเวอร์ชัน = พร้อม
 [Web Serial](../common/glossary.md#web-serial) · [Web Bluetooth](../common/glossary.md#web-bluetooth) · [GATT](../common/glossary.md#gatt) · [Secure context](../common/glossary.md#secure-context) · [Gateway](../common/glossary.md#gateway) · [Telemetry / Command / Event](../common/glossary.md#telemetry--command--event)
 
 ## แหล่งอ้างอิง
-- เอกสารผู้สอน ND02 Week 02 (11 บท): [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week02/lessons/README.md) — โดยเฉพาะ
+- เอกสารผู้สอน ND2 Week 02 (11 บท): [lessons/README.md](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week02/lessons/README.md) — โดยเฉพาะ
   [02 Browser APIs](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week02/lessons/02-browser-hardware-apis.md) ·
   [03 Web Serial](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week02/lessons/03-web-serial-concept.md) ·
   [05 Web Bluetooth](https://github.com/drsanti/kmutt-nd69/blob/main/nd2/docs/week02/lessons/05-web-bluetooth-concept.md) ·

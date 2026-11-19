@@ -59,7 +59,7 @@ if (boardHas(CAP.IMU)) showMotionPanel();
 
 ## 3. โครงสร้าง repo และ 2 track
 
-```
+```text
 hardware-interface-workshop/
 ├── firmware-prebuilt/   ← ไฟล์ firmware สำเร็จรูป (es3c28p, ws28p) + เครื่องมือ rb
 ├── web-app/             ← track เริ่มต้น: HTML / CSS / TypeScript + sdk/  (พอร์ต 5174)
