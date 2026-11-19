@@ -15,6 +15,7 @@
 | **ND3** | นักพัฒนา AI และ Digital Twin เชิงอุตสาหกรรม — middleware แบบ ROS, warehouse simulation, digital twin | [nd3/](nd3/README.md) |
 | ทุกหลักสูตร | Git, GitHub และ Markdown (Week 05) | [common/git-github-markdown.md](common/git-github-markdown.md) |
 | ทุกหลักสูตร | คู่มือแก้ปัญหาพื้นฐาน (Shell, USB/Port, PATH, Doctor) | [common/troubleshooting.md](common/troubleshooting.md) |
+| ทุกหลักสูตร | ตัวอย่าง `AGENTS.md` และ Prompt Template สำหรับ AI agent | [common/ai-agent-templates.md](common/ai-agent-templates.md) |
 
 ## วิธีอ่าน
 - แต่ละบทมีโครงเดียวกัน: เรียนอะไร → ทำไมสำคัญ → แนวคิดหลัก (มีแผนภาพ) → ขั้นตอนลงมือ → ปัญหาที่พบบ่อย → คำศัพท์ → แหล่งอ้างอิง
